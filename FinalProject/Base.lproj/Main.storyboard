@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="KLL-f3-Zaw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JEQ-Ls-VYZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpP-zj-0yN">
@@ -141,20 +141,11 @@
                         <viewLayoutGuide key="safeArea" id="DKc-el-0zi"/>
                         <color key="backgroundColor" red="0.98198385340000005" green="0.93925175090000002" blue="0.77704104600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="d0V-xA-hcy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmg-vo-q3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3004.347826086957" y="497.54464285714283"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="02F-rZ-J2z">
-            <objects>
-                <viewController id="4Fe-TU-ulG" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bXk-Gh-VjL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhw-UK-LMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1926" y="897"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bvj-gs-UOg">
@@ -368,18 +359,18 @@ Cg
         <scene sceneID="xmX-Py-cQ6">
             <objects>
                 <viewController id="W6X-1m-QMj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="55L-lR-8Jv">
+                    <view key="view" contentMode="scaleToFill" id="55L-lR-8Jv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-Ey-UfO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-Ey-UfO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akc-iw-APc">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akc-iw-APc">
                                         <rect key="frame" x="0.0" y="0.0" width="925" height="896"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A58-Um-3l8">
-                                                <rect key="frame" x="-8" y="0.0" width="925" height="896"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-Um-3l8">
+                                                <rect key="frame" x="0.0" y="0.0" width="925" height="896"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-18 at 20.18.57" translatesAutoresizingMaskIntoConstraints="NO" id="LYO-y6-aUz">
                                                         <rect key="frame" x="321" y="134" width="276" height="182"/>
@@ -467,9 +458,6 @@ Cg
                                                                 </fragment>
                                                             </attributedString>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="4Fe-TU-ulG" kind="show" id="a4K-c4-khf"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnB-Yd-zT8">
                                                         <rect key="frame" x="648" y="522" width="97" height="46"/>
@@ -486,6 +474,9 @@ Cg
                                                                 </fragment>
                                                             </attributedString>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="KLL-f3-Zaw" kind="show" id="JKT-Bm-ytR"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2La-b5-gys">
                                                         <rect key="frame" x="534" y="777" width="325" height="46"/>
@@ -502,6 +493,9 @@ Cg
                                                                 </fragment>
                                                             </attributedString>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="odS-5o-wPm" kind="show" id="hmx-fZ-PD8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-Le-d8W">
                                                         <rect key="frame" x="34" y="45" width="68" height="40"/>
@@ -529,12 +523,17 @@ Cg
                                                 <color key="backgroundColor" red="0.98198385340000005" green="0.93925175090000002" blue="0.77704104600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="925" id="MDj-MF-53P"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="925" id="gpA-Y0-pJF"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="A58-Um-3l8" secondAttribute="bottom" id="MDs-mN-EC4"/>
+                                            <constraint firstItem="A58-Um-3l8" firstAttribute="leading" secondItem="akc-iw-APc" secondAttribute="leading" id="RFs-nZ-nez"/>
+                                            <constraint firstAttribute="trailing" secondItem="A58-Um-3l8" secondAttribute="trailing" id="aj3-nu-yMT"/>
                                             <constraint firstAttribute="width" constant="925" id="goI-VM-psD"/>
+                                            <constraint firstItem="A58-Um-3l8" firstAttribute="top" secondItem="akc-iw-APc" secondAttribute="top" id="oNm-QO-rZb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -689,6 +688,55 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kTm-5V-tt4">
+            <objects>
+                <viewController id="odS-5o-wPm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IoU-fw-EEV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-6G-gLD">
+                                <rect key="frame" x="20" y="20" width="68" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Futura-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="W6X-1m-QMj" kind="show" id="qiR-lO-3BQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztl-xb-3O4">
+                                <rect key="frame" x="10" y="64" width="395" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TOURISM AND SIGHTSEEING">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="28" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c6C-x0-kDt"/>
+                        <color key="backgroundColor" red="0.98198385340000005" green="0.93925175090000002" blue="0.77704104600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VNh-SE-pXs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQn-rZ-5SP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071.0144927536235" y="851.78571428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UQR-Q1-kSj">
@@ -1118,9 +1166,6 @@ Cg
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="5ly-cz-GOZ" kind="show" id="We2-i4-d4a"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxw-0b-xIV">
                                                 <rect key="frame" x="648" y="522" width="97" height="46"/>
@@ -1557,191 +1602,12 @@ Cg
             </objects>
             <point key="canvasLocation" x="2040.5797101449277" y="931.47321428571422"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="rwu-R3-qXM">
-            <objects>
-                <viewController id="5ly-cz-GOZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="x1f-zn-F9X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvf-Cb-kJr">
-                                <rect key="frame" x="20" y="20" width="68" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Back">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Futura-Medium"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="yZ8-VQ-cwV" kind="show" id="tK9-xE-yBg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PF-V9-WEI">
-                                <rect key="frame" x="82" y="68" width="246" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="ACCOMODATION">
-                                        <attributes>
-                                            <font key="NSFont" size="28" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Wr7-au-AR5"/>
-                        <color key="backgroundColor" red="0.98198385340000005" green="0.93925175090000002" blue="0.77704104600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="63Q-E5-ij2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MmJ-b2-Jmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2706" y="432"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="a7x-gY-JEW">
-            <objects>
-                <viewController id="sxH-SR-PbG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="usD-1W-aMH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDs-6G-S06">
-                                <rect key="frame" x="43" y="36" width="328" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="STOCKHOLM, SWEDEN">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" size="26" name="Didot"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-17 at 20.02.01" translatesAutoresizingMaskIntoConstraints="NO" id="J3w-OT-d1l">
-                                <rect key="frame" x="42" y="44" width="327" height="271"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfc-XT-Ubh">
-                                <rect key="frame" x="42" y="357" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Transportation">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="Baskerville"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-AS-Br8">
-                                <rect key="frame" x="42" y="458" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Food and Dining">
-                                            <attributes>
-                                                <font key="NSFont" size="17" name="Baskerville"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ze-XM-T5E">
-                                <rect key="frame" x="236" y="488" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="FAQ">
-                                            <attributes>
-                                                <font key="NSFont" size="17" name="Baskerville"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lh-Mb-25K">
-                                <rect key="frame" x="43" y="553" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Sightseeing and Tourism">
-                                            <attributes>
-                                                <font key="NSFont" size="17" name="Baskerville"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl5-sV-vwP">
-                                <rect key="frame" x="43" y="662" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Accomodation">
-                                            <attributes>
-                                                <font key="NSFont" size="16" name="Baskerville"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-YJ-NHT">
-                                <rect key="frame" x="236" y="562" width="119" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="HOME">
-                                            <attributes>
-                                                <font key="NSFont" size="17" name="Baskerville"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.50874902450000004" green="0.92128556969999997" blue="0.74917243119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="uPj-5q-uIs"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hZD-I7-4UU"/>
-                        <color key="backgroundColor" red="0.98198385340000005" green="0.93925175090000002" blue="0.77704104600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Tgs-79-8Ny"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NhA-Tt-Bcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="893" y="-726"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fcy-th-xUA"/>
         <segue reference="kMT-h7-ubd"/>
         <segue reference="UJz-eE-vle"/>
-        <segue reference="VNT-In-HJb"/>
-        <segue reference="O0U-Ts-0jk"/>
+        <segue reference="MHh-lf-3yh"/>
+        <segue reference="qiR-lO-3BQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="6a5a0f53-0b4e-463b-ab5e-852808928162" width="592" height="772"/>
@@ -1760,7 +1626,6 @@ Cg
         <image name="LATIN" width="800" height="534"/>
         <image name="MONTMARTRE" width="1080" height="1080"/>
         <image name="RESTAURANT" width="1600" height="2400"/>
-        <image name="Screen Shot 2022-08-17 at 20.02.01" width="940" height="672"/>
         <image name="Screen Shot 2022-08-18 at 19.33.02" width="1116" height="548"/>
         <image name="Screen Shot 2022-08-18 at 19.33.23" width="1178" height="508"/>
         <image name="Screen Shot 2022-08-18 at 19.37.34" width="1166" height="530"/>
